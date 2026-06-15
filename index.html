@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<title>H2O Glow Pro</title>
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/icon-192.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="card">
+<h1>H2O Glow <span>Pro</span></h1>
+<p>Creator: Bhairu Sharma</p>
+
+<button onclick="enableNotification()">Enable Reminder 💧</button>
+
+<h2 id="water">0 / 2000 ML</h2>
+
+<button onclick="addWater(250)">+250 ML</button>
+<button onclick="addWater(500)">+500 ML</button>
+
+<h2>About Creator</h2>
+<p>
+Bhairu Sharma<br>
+Innovator & Developer<br>
+Building software experiences for health and productivity.
+</p>
+
+<h2>Hydration Health Info</h2>
+<p>
+Dehydration signs:
+Dry mouth, fatigue, dizziness, dark urine.
+<br><br>
+This app provides general wellness information and is not medical diagnosis.
+</p>
+
+</div>
+
+<script src="js/app.js"></script>
+<script src="js/notification.js"></script>
+
+<script>
+navigator.serviceWorker.register('service-worker.js');
+</script>
+
+</body>
+</html>
